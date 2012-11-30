@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="collective.plonetruegallery">
+
+
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".galleryfolder.Galleryfolder">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IGalleryfolder"
+        />
+          <!-- -*- change this to ATFolder -*- -->
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="Products.ATContentTypes.interfaces.IATFolder"
+        />
+
+  </class>
+
+  
+</configure>
