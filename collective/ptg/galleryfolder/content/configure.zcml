@@ -1,7 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
-    i18n_domain="collective.plonetruegallery">
+    i18n_domain="collective.ptg.gallerycontent">
 
 
 
@@ -14,11 +14,6 @@
         interface="..interfaces.IGalleryfolder"
         />
           <!-- -*- change this to ATFolder -*- -->
-    <require
-        permission="cmf.ModifyPortalContent"
-        set_schema="Products.ATContentTypes.interfaces.IATFolder"
-        />
-
   </class>
 
   
