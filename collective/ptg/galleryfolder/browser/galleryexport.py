@@ -27,14 +27,16 @@ class Exporter(BrowserView):
         ZIP = zipfile.ZipFile(zip_filename, 'w')
 
         for obj in self.context.getFolderContents():
-            #format = obj.format
             obj = obj.getObject()
+            #print obj.format
 
             if obj.portal_type == 'Image':
-                # export only preview scale
-                #unfortunately, I dont know the format. format = obj.format
+                # export one scale
+                #unfortunately, I dont know the format.
+                #Guessing on jpg
+                full_image_name = obj.getId() + '.jpg'
                 img = obj.Schema().getField('image').getScale(obj,scale=imagesize)
-                ZIP.writestr(self.context.getId() + '/' + obj.getId(), str(img.data))
+                ZIP.writestr(self.context.getId() + '/' + full_image_name, str(img.data))
         
         ZIP.close()
         data = file(zip_filename).read()

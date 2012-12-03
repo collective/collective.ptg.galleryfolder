@@ -6,12 +6,15 @@
   <property name="description"
     i18n:translate="">Gallery Content Type for Plone Truegallery</property>
   <property name="content_meta_type">Galleryfolder</property>
-  <property name="content_icon">galleryfolder_icon.gif</property>
+  <property name="content_icon">++resource++gallery_icon.gif</property>
   <property name="product">collective.ptg.galleryfolder</property>
   <property name="factory">addGalleryfolder</property>
   <property name="immediate_view">atct_edit</property>
   <property name="global_allow">True</property>
-  <property name="filter_content_types">False</property>
+  <property name="filter_content_types">True</property>
+  <property name="allowed_content_types">
+    <element value="Image"/>
+  </property>
   <property name="allow_discussion">False</property>
   <property name="default_view">galleryview</property>
   <property name="view_methods">

@@ -8,9 +8,13 @@
   <!-- -*- extra stuff goes here -*- -->
     <browser:page
            name="gallery-export"
-           for="Products.ATContentTypes.interface.IGalleryFolder"
+           for="collective.ptg.galleryfolder.interfaces.galleryfolder.IGalleryfolder"
            class=".galleryexport.Exporter"
-            permission="zope.Public"
+           permission="zope.Public"
        />
-
+       
+    <browser:resource
+        name="gallery_icon.gif"
+        image="galleryicon.gif"
+        />
 </configure>
