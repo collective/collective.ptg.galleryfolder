@@ -1,12 +1,8 @@
-from zope import schema
-from zope.interface import Interface 
-
-from zope.app.container.constraints import contains, containers
-
-from collective.plonetruegallery import MessageFactory as _
+from zope.interface import Interface
+# -*- Additional Imports Here -*-
 
 
 class IGalleryfolder(Interface):
-    """Galleryfolder content type"""
-    
+    """Gallery Content Type for Plone Truegallery"""
 
+    # -*- schema definition goes here -*-

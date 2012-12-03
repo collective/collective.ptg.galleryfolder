@@ -5,6 +5,5 @@ PROJECTNAME = 'collective.ptg.galleryfolder'
 
 ADD_PERMISSIONS = {
     # -*- extra stuff goes here -*-
-    'Galleryfolder': 'collective.plonetruegallery: Add Galleryfolder',
+    'Galleryfolder': 'collective.ptg.galleryfolder: Add Galleryfolder',
 }
-
