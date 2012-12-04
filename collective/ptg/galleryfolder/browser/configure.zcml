@@ -13,6 +13,14 @@
            permission="zope.Public"
        />
        
+    <browser:viewlet
+        name="collective.ptg.galleryfolder.galleryinfo"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class=".viewlets.GalleryInfo"
+        for="collective.ptg.galleryfolder.interfaces.IGalleryfolder"
+        permission="cmf.ModifyPortalContent"
+        />
+       
     <browser:resource
         name="gallery_icon.gif"
         image="galleryicon.gif"
